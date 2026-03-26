@@ -49,7 +49,11 @@
 // alert (m2+" metros")
 
 
+// convertir a edad canina
 
+let edad = Number(prompt("cual es tu edad humana"))
+let canina = (edad*7)
+alert (canina+"edad")
 
 
 
