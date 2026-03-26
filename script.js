@@ -73,11 +73,16 @@
 // let farenheit = (celsios*9/5)+ 32
 // alert (farenheit+ "celsios")
 
-let farenheit1 = Number(prompt("farenheit a celsios"))
-let celsios1 = (farenheit1-32)*5/9
-alert(celsios1+ "farenheit1")
+// let farenheit1 = Number(prompt("farenheit a celsios"))
+// let celsios1 = (farenheit1-32)*5/9
+// alert(celsios1+ "farenheit1")
 
 
+// calcular el area de un cuadrado
+
+let lado = Number(prompt ("ingresa la medida de un lado del cuadrado"))
+let area = (lado * lado)
+alert("el area de un cuadraro es:"+ area)
 
 
 
