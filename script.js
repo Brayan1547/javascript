@@ -86,8 +86,14 @@
 
 // calcular el perimetro de un cuadrado
 
-let p = Number(prompt("perimetro de un cuadrado"))
-let l = (p*4)
-alert(l+ "p")
+// let p = Number(prompt("perimetro de un cuadrado"))
+// let l = (p*4)
+// alert(l+ "p")
+
+// convertir de minutos segundos 
+
+let minutos = Number(prompt("minutos a segundos"))
+let segundos = (minutos*60)
+alert (segundos+ "segundos")
 
 
