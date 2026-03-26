@@ -100,8 +100,14 @@
 
 // convertir de segundos a minutos
 
-let segundos1 = Number(prompt("de segundos a minutos"))
-let minutos1 = (segundos1/60)
-alert(minutos1+ "minuto1")
+// let segundos1 = Number(prompt("de segundos a minutos"))
+// let minutos1 = (segundos1/60)
+// alert(minutos1+ "minuto1")
 
 
+// area de un triangulo
+
+let b = Number(prompt("ingresa la base del triangulo"))
+let h = Number(prompt("ingresa la altura del triangulo"))
+let area = (b*h)/2
+alert(area)
