@@ -107,7 +107,15 @@
 
 // area de un triangulo
 
-let b = Number(prompt("ingresa la base del triangulo"))
-let h = Number(prompt("ingresa la altura del triangulo"))
-let area = (b*h)/2
-alert(area)
+// let b = Number(prompt("ingresa la base del triangulo"))
+// let h = Number(prompt("ingresa la altura del triangulo"))
+// let area = (b*h)/2
+// alert(area)
+
+
+// convertidor de milimetros a centimetros
+
+let milimetros = Number(prompt("ingresa los milimetros"))
+let centimetros = (milimetros/10)
+alert(centimetros + "cm")
+
