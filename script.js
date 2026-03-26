@@ -51,10 +51,20 @@
 
 // convertir a edad canina
 
-let edad = Number(prompt("cual es tu edad humana"))
-let canina = (edad*7)
-alert (canina+"edad")
+// let edad = Number(prompt("cual es tu edad humana"))
+// let canina = (edad*7)
+// alert (canina+"edad")
 
+
+// convertir de peso a dolares
+
+// let pesos = Number(prompt("pesos colombianos"))
+// let dolares = (pesos*0.00027)
+// alert (dolares+" pesos")
+
+let dolar = Number(prompt("dolares"))
+let cop = (dolar*3.694)
+alert (cop+ " dolar")
 
 
 
