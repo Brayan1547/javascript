@@ -80,10 +80,14 @@
 
 // calcular el area de un cuadrado
 
-let lado = Number(prompt ("ingresa la medida de un lado del cuadrado"))
-let area = (lado * lado)
-alert("el area de un cuadraro es:"+ area)
+// let lado = Number(prompt ("ingresa la medida de un lado del cuadrado"))
+// let area = (lado * lado)
+// alert("el area de un cuadraro es:"+ area)
 
+// calcular el perimetro de un cuadrado
 
+let p = Number(prompt("perimetro de un cuadrado"))
+let l = (p*4)
+alert(l+ "p")
 
 
