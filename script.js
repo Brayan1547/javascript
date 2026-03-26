@@ -62,9 +62,21 @@
 // let dolares = (pesos*0.00027)
 // alert (dolares+" pesos")
 
-let dolar = Number(prompt("dolares"))
-let cop = (dolar*3.694)
-alert (cop+ " dolar")
+// let dolar = Number(prompt("dolares"))
+// let cop = (dolar*3.694)
+// alert (cop+ " dolar")
+
+
+// convertir de grados celsios a farenheit
+
+// let celsios = Number(prompt("celsios a farenheit"))
+// let farenheit = (celsios*9/5)+ 32
+// alert (farenheit+ "celsios")
+
+let farenheit1 = Number(prompt("farenheit a celsios"))
+let celsios1 = (farenheit1-32)*5/9
+alert(celsios1+ "farenheit1")
+
 
 
 
