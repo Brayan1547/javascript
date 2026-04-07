@@ -159,15 +159,81 @@
 
 // usuario un monto , cauntos meses, despues de 6 meses vas a gnar de inteeres al 10 %
 
-let monto = Number (prompt("cuanta plata va meter"))
-let meses = Number (prompt("cuantos meses"))
-let interesAldies = 0.10
+// let monto = Number (prompt("cuanta plata va meter"))
+// let meses = Number (prompt("cuantos meses"))
+// let interesAldies = 0.10
 
-let totalInteres = monto * interesAlDies + meses;
+// let totalInteres = monto * interesAlDies + meses;
 
-let montoTotal = monto + totalInteres
+// let montoTotal = monto + totalInteres
 
-alert("En" + meses + "meses ganaras" + totalInteres + "por interes")
-alert("tu saldo total sera de" + montoTotal)
+// alert("En" + meses + "meses ganaras" + totalInteres + "por interes")
+// alert("tu saldo total sera de" + montoTotal)
+
+
+// agregar 3 producatos y que mostrara cuantos avian
+
+// let producto = [];
+
+// let pro1 = prompt ('ingresa el objeto_1')
+// let pro2 = prompt ('ingresa el objeto_2')
+// let pro3 = prompt ('ingresa el objeto_3')
+
+// producto.push(pro1, pro2, pro3)
+
+// console.log(producto)
+
+
+//5 notas y sacar el promedio es de ?
+
+// let notas = [];
+
+// let nota1 =Number(prompt ('ingresa la nota1'))
+// let nota2 =Number(prompt ('ingresa la nota2'))
+// let nota3 =Number(prompt ('ingresa la nota3'))
+// let nota4 =Number(prompt ('ingresa la nota4'))
+// let nota5 =Number(prompt ('ingresa la nota5'))
+
+// notas.push(nota1, nota2, nota3, nota4, nota5)
+
+// let promedio = (notas[0] +notas[1] + nota1[2] + nota1[3] + nota1[4] ) / notas.length
+
+// console.log('el promedio es de:' + promedio)
+
+
+//cuanto costo el producto si el produnto cuesta menos de 100 le van a dar un aumenta un 10% (por costos de envio)si cuesta entre 100 y 200 se hace un descuento del 10% pero si es mayor de 200 se hace un descuento del 25%
+
+
+// let precio = Number(prompt('precio del producto'));
+
+
+// if (precio < 100 ) {
+//     precioFinal = (precio * 0.80) + precio
+//     console.log('tu precio ' +  precioFinal)
+
+
+// } else if (precio <= 200) {
+//     precioFinal = (precio * 1.10)
+//     console.log('tu precio ' +  precioFinal)
+
+// } else if (precio > 200){
+//     precioFinal = (precio * 1.25)
+//     console.log('tu precio ' +  precioFinal)
+
+
+// }else{
+// console.log('el precio no existe')}
+
+let  Number1= Number(prompt('dijite un numero'))
+let Number2= Number (prompt ('dijite otro numero'))
+
+let  selecciona = Number(prompt(`
+    que operacion quieres hacer?
+    1 = suma 
+    2 = resta 
+    3 = multiplicacion
+    4 = dividir
+`))
+
 
 
