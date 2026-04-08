@@ -224,16 +224,88 @@
 // }else{
 // console.log('el precio no existe')}
 
-let  Number1= Number(prompt('dijite un numero'))
-let Number2= Number (prompt ('dijite otro numero'))
 
-let  selecciona = Number(prompt(`
-    que operacion quieres hacer?
-    1 = suma 
-    2 = resta 
-    3 = multiplicacion
-    4 = dividir
-`))
+// let  Number1= Number(prompt('dijite un numero'))
+// let Number2= Number (prompt ('dijite otro numero'))
+
+// let  selecciona = Number(prompt(`
+//     que operacion quieres hacer?
+//     1 = suma 
+//     2 = resta 
+//     3 = multiplicacion
+//     4 = dividir
+// `))
+
+
+// piedra pepel o tijera
+
+// let options = ['piedra', '´pepel', 'tijera'];
+// let azar = Math.floor(Math.random() * 3);
+// let pc = options [azar]
+
+// let user = prompt('piedra, papel o tijera?');
+
+// if(user === pc) {
+
+// } else if (
+//     (user == 'tijera' && pc == 'papel')||
+//     (user == 'piedra' && pc == 'tijera')||
+//     (user == 'papel' && pc == 'piedra')
+    
+// ){
+//     console.log('ganaste')
+
+// } else{
+//     console.log('perdiste')
+// }
+
+
+// pares y impares
+
+// let numeros = [8, 18, 21, 57, 48, 36, 71, 5] ;
+// let pares = [] ;
+// let impares = [] ;
+
+// for(i =0 ; i < numeros.length ; i++){
+//     if(numeros[i] % 2 === 0){ 
+//     pares.push(numeros[i])
+// } else {
+//     impares.push(numeros[i])
+// }
+// }
+
+// console.log ("los numeros pares son" + pares)
+// console.log ("numeros impares son" + impares)
 
 
 
+// tablas de multiplicar
+
+// let tabla = Number (prompt('ingresa la tabla')); 
+// let rango = Number(prompt('ingresa el limite '))
+
+// if( tabla < 1 || rango < 1 ){
+//     console.log('los valores deben ser posotivos');
+// } else if(tabla > 10) {
+//     console.log('la tabla debe ser entre 1 y 10');
+// } else {
+//     for(let i = 1 ; i <=rango ; i++){
+//         console.log(` ${tabla} * ${i} = ${i*tabla}`)
+//     }
+// }
+
+
+let numeros = [1, 5, 7, 8, 18, 26, 34] ;
+let suma = 0 ;
+let max = 0 ;
+
+for(let i = 0 ; 1 < numeros.length ; i++) {
+    let num = numeros [i]
+    suma = suma + num
+
+    if(max < num) {
+        max = num
+    }
+}
+console.log('la suma es' + suma)
+console.log('el mayor es' + max)
