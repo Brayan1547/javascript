@@ -312,27 +312,45 @@
 
 
 
-let palabras = ["sol", "luna", "estrella", "cielo", "mar", "tierra", "fuego", "aire", "nube", "viento"];
-let larga = palabras [0];
-let corta = palabras [0];
+// let palabras = ["sol", "luna", "estrella", "cielo", "mar", "tierra", "fuego", "aire", "nube", "viento"];
+// let larga = palabras [0];
+// let corta = palabras [0];
 
 
 // 1.mostrar cuantas palabras tiene cada palabra
 
-for(let i = 0 ; i < palabras.length ; i++){ 
-    let palabra =  palabras [i];
-    console.log(`la palabra ${palabra} tiene ${palabra.length} letras`);
+// for(let i = 0 ; i < palabras.length ; i++){ 
+//     let palabra =  palabras [i];
+//     console.log(`la palabra ${palabra} tiene ${palabra.length} letras`);
 
 // 2.mostrar la palabra mas corta y mas larga
 
-if(palabra.length > larga.length) {
-    larga = palabra; }
+// if(palabra.length > larga.length) {
+//     larga = palabra; }
     
-    if (palabra.length < corta.length) {
-        corta = palabra;
-    }
+//     if (palabra.length < corta.length) {
+//         corta = palabra;
+//     }
     
-}
+// }
 
-console.log ("palabra mas larga:" , larga);
-console.log ("la palabra mas corta:" , corta);
+// console.log ("palabra mas larga:" , larga);
+// console.log ("la palabra mas corta:" , corta);
+
+
+const estudiantes = [
+  { nombre: "Juan", apellido: "Pérez", nota: 2.2 },
+  { nombre: "María", apellido: "Gómez", nota: 3.8 },
+  { nombre: "Carlos", apellido: "Rodríguez", nota: 4.2 },
+  { nombre: "Ana", apellido: "Martínez", nota: 5.0 },
+  { nombre: "Luis", apellido: "Fernández", nota: 1.5 }
+];
+
+for (let i = 0 ; i < estudiantes.length; i++){
+    let estudiante = estudiantes [i] ;
+     if (estudiante.nota >= 3){
+          console.log(`el estudiante ${estudiante.nombre} ${estudiante.apellido} pasó ${estudiante.nota}`);
+     }
+
+
+} 
