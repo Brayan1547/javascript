@@ -295,17 +295,44 @@
 // }
 
 
-let numeros = [1, 5, 7, 8, 18, 26, 34] ;
-let suma = 0 ;
-let max = 0 ;
+// let numeros = [1, 5, 7, 8, 18, 26, 34] ;
+// let suma = 0 ;
+// let max = 0 ;
 
-for(let i = 0 ; 1 < numeros.length ; i++) {
-    let num = numeros [i]
-    suma = suma + num
+// for(let i = 0 ; 1 < numeros.length ; i++) {
+//     let num = numeros [i]
+//     suma = suma + num
 
-    if(max < num) {
-        max = num
+//     if(max < num) {
+//         max = num
+//     }
+// }
+// console.log('la suma es' + suma)
+// console.log('el mayor es' + max)
+
+
+
+let palabras = ["sol", "luna", "estrella", "cielo", "mar", "tierra", "fuego", "aire", "nube", "viento"];
+let larga = palabras [0];
+let corta = palabras [0];
+
+
+// 1.mostrar cuantas palabras tiene cada palabra
+
+for(let i = 0 ; i < palabras.length ; i++){ 
+    let palabra =  palabras [i];
+    console.log(`la palabra ${palabra} tiene ${palabra.length} letras`);
+
+// 2.mostrar la palabra mas corta y mas larga
+
+if(palabra.length > larga.length) {
+    larga = palabra; }
+    
+    if (palabra.length < corta.length) {
+        corta = palabra;
     }
+    
 }
-console.log('la suma es' + suma)
-console.log('el mayor es' + max)
+
+console.log ("palabra mas larga:" , larga);
+console.log ("la palabra mas corta:" , corta);
