@@ -390,31 +390,45 @@
 // }
 
 
-// dijite un mes : N5
-// que estacion es :?
 
-// un año es visiesto
 
-let mes = Number(prompt('ingresa un mes '));
+// Estaciones del año
 
-switch (mes) {
-     case 1:  case 2:  case 12:
-          alert(`es invierno`)
-          break;
+
+// let mes = Number(prompt('ingresa un mes '));
+
+// switch (mes) {
+//      case 1:  case 2:  case 12:
+//           alert(`es invierno`)
+//           break;
         
-     case 3: case 4: case 5:
-          alert(`estacion primavera`)
-          break;
+//      case 3: case 4: case 5:
+//           alert(`estacion primavera`)
+//           break;
      
-     case 6: case 7: case 8:
-          alert(`estacion verano`)
+//      case 6: case 7: case 8:
+//           alert(`estacion verano`)
    
-     case 9: case 10: case 11:
-          alert(`estacion otoño`)
-          break;
+//      case 9: case 10: case 11:
+//           alert(`estacion otoño`)
+//           break;
           
-     default : 
-     alert(`no existe año`)
+//      default : 
+//      alert(`no existe año`)
      
+// }
+
+// Año biciesto
+
+let año = Number(prompt('ingresa el año'));
+
+if( (año % 4 ===0 && año % 100 !== 0) ||( año % 400 === 0)) {
+     alert (año + 'el año biciesto');
+} else {
+     alert (año +'no es');
 }
+
+   
+j
+
 
