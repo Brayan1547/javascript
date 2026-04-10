@@ -338,19 +338,83 @@
 // console.log ("la palabra mas corta:" , corta);
 
 
-const estudiantes = [
-  { nombre: "Juan", apellido: "Pérez", nota: 2.2 },
-  { nombre: "María", apellido: "Gómez", nota: 3.8 },
-  { nombre: "Carlos", apellido: "Rodríguez", nota: 4.2 },
-  { nombre: "Ana", apellido: "Martínez", nota: 5.0 },
-  { nombre: "Luis", apellido: "Fernández", nota: 1.5 }
-];
-
-for (let i = 0 ; i < estudiantes.length; i++){
-    let estudiante = estudiantes [i] ;
-     if (estudiante.nota >= 3){
-          console.log(`el estudiante ${estudiante.nombre} ${estudiante.apellido} pasó ${estudiante.nota}`);
-     }
 
 
-} 
+// const estudiantes = [
+//   { nombre: "Juan", apellido: "Pérez", nota: 2.2 },
+//   { nombre: "María", apellido: "Gómez", nota: 3.8 },
+//   { nombre: "Carlos", apellido: "Rodríguez", nota: 4.2 },
+//   { nombre: "Ana", apellido: "Martínez", nota: 5.0 },
+//   { nombre: "Luis", apellido: "Fernández", nota: 1.5 }
+// ];
+
+// for (let i = 0 ; i < estudiantes.length; i++){
+//     let estudiante = estudiantes [i] ;
+//      if (estudiante.nota >= 3){
+//           console.log(`el estudiante ${estudiante.nombre} ${estudiante.apellido} pasó ${estudiante.nota}`);
+//      } else {
+//         console.log(`el estudiante`) $ {estudiante.nombre} ${estudiante.apellido} perdio 
+//      }
+
+// } 
+
+// switch (..) {
+//      case 1:
+//           console.log('...')
+//           break;
+// }
+
+
+// let azar = Math.floor( (Math.random() *10 ) +1 );
+
+// let estado = true
+// let intentos = 1;
+
+
+// while (estado){
+//      let n = Number(prompt ('Digite un numero'));
+     
+//      if(n === azar) {
+//           alert('ganaste en el intento: ${intentos}');
+//           estado = false;
+
+//      } else if (intentos >=5) {
+//           alert('perdiste, ya no tienes mas intentos');
+//           estado = false
+
+//      } else {
+//           alert ('ese no era')
+//      }
+      
+//      intentos++
+// }
+
+
+// dijite un mes : N5
+// que estacion es :?
+
+// un año es visiesto
+
+let mes = Number(prompt('ingresa un mes '));
+
+switch (mes) {
+     case 1:  case 2:  case 12:
+          alert(`es invierno`)
+          break;
+        
+     case 3: case 4: case 5:
+          alert(`estacion primavera`)
+          break;
+     
+     case 6: case 7: case 8:
+          alert(`estacion verano`)
+   
+     case 9: case 10: case 11:
+          alert(`estacion otoño`)
+          break;
+          
+     default : 
+     alert(`no existe año`)
+     
+}
+
