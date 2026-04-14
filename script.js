@@ -251,7 +251,7 @@
 //     (user == 'tijera' && pc == 'papel')||
 //     (user == 'piedra' && pc == 'tijera')||
 //     (user == 'papel' && pc == 'piedra')
-    
+
 // ){
 //     console.log('ganaste')
 
@@ -327,11 +327,11 @@
 
 // if(palabra.length > larga.length) {
 //     larga = palabra; }
-    
+
 //     if (palabra.length < corta.length) {
 //         corta = palabra;
 //     }
-    
+
 // }
 
 // console.log ("palabra mas larga:" , larga);
@@ -373,7 +373,7 @@
 
 // while (estado){
 //      let n = Number(prompt ('Digite un numero'));
-     
+
 //      if(n === azar) {
 //           alert('ganaste en el intento: ${intentos}');
 //           estado = false;
@@ -385,7 +385,7 @@
 //      } else {
 //           alert ('ese no era')
 //      }
-      
+
 //      intentos++
 // }
 
@@ -401,34 +401,123 @@
 //      case 1:  case 2:  case 12:
 //           alert(`es invierno`)
 //           break;
-        
+
 //      case 3: case 4: case 5:
 //           alert(`estacion primavera`)
 //           break;
-     
+
 //      case 6: case 7: case 8:
 //           alert(`estacion verano`)
-   
+
 //      case 9: case 10: case 11:
 //           alert(`estacion otoño`)
 //           break;
-          
+
 //      default : 
 //      alert(`no existe año`)
-     
+
 // }
+
 
 // Año biciesto
 
-let año = Number(prompt('ingresa el año'));
+// let año = Number(prompt('ingresa el año'));
 
-if( (año % 4 ===0 && año % 100 !== 0) ||( año % 400 === 0)) {
-     alert (año + 'el año biciesto');
-} else {
-     alert (año +'no es');
-}
+// if( (año % 4 ===0 && año % 100 !== 0) ||( año % 400 === 0)) {
+//      alert (año + 'el año biciesto');
+// } else {
+//      alert (año +'no es');
+// }
 
-   
-j
+
+// let Number = Number(prompt('que año quieres calcular'));
+// let años = [2024, 2000, 3000, 2100]
+
+// for (i = 0; i < años.length; ++i)
+
+//      alert()
+
+
+
+let btn1 = document.getElementById('btn1');
+let btn2 = document.getElementById('btn2');
+let btn3 = document.getElementById('btn3')
+
+
+// piedra papel o tijera 
+
+btn1.addEventListener('click', () => {
+     alert('boton1')
+
+     let options = ['piedra', '´pepel', 'tijera'];
+     let azar = Math.floor(Math.random() * 3);
+     let pc = options[azar]
+
+     let user = prompt('piedra, papel o tijera?');
+
+     if (user === pc) {
+
+     } else if (
+          (user == 'tijera' && pc == 'papel') ||
+          (user == 'piedra' && pc == 'tijera') ||
+          (user == 'papel' && pc == 'piedra')
+
+     ) {
+          console.log('ganaste')
+
+     } else {
+          console.log('perdiste')
+     }
+});
+
+// numero azar
+
+btn2.addEventListener('click', () => {
+     alert('boton2')
+
+     let azar = Math.floor((Math.random() * 10) + 1);
+
+     let estado = true
+     let intentos = 1;
+
+
+     while (estado) {
+          let n = Number(prompt('Digite un numero'));
+
+          if (n === azar) {
+               alert('ganaste en el intento: ${intentos}');
+               estado = false;
+
+          } else if (intentos >= 5) {
+               alert('perdiste, ya no tienes mas intentos');
+               estado = false
+
+          } else {
+               alert('ese no era')
+          }
+
+          intentos++
+     }
+
+});
+
+
+btn3.addEventListener('click', () => {
+     alert('boton3')
+
+     let tabla = Number (prompt('ingresa la tabla')); 
+     let rango = Number(prompt('ingresa el limite '))
+
+     if( tabla < 1 || rango < 1 ){
+         console.log('los valores deben ser posotivos');
+     } else if(tabla > 10) {
+         console.log('la tabla debe ser entre 1 y 10');
+     } else {
+         for(let i = 1 ; i <=rango ; i++){
+             console.log(` ${tabla} * ${i} = ${i*tabla}`)
+         }
+     }
+
+})
 
 
