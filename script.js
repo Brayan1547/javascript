@@ -439,85 +439,139 @@
 
 
 
-let btn1 = document.getElementById('btn1');
-let btn2 = document.getElementById('btn2');
-let btn3 = document.getElementById('btn3')
+// let btn1 = document.getElementById('btn1');
+// let btn2 = document.getElementById('btn2');
+// let btn3 = document.getElementById('btn3')
 
 
 // piedra papel o tijera 
 
-btn1.addEventListener('click', () => {
-     alert('boton1')
+// btn1.addEventListener('click', () => {
+//      alert('boton1')
 
-     let options = ['piedra', '´pepel', 'tijera'];
-     let azar = Math.floor(Math.random() * 3);
-     let pc = options[azar]
+//      let options = ['piedra', '´pepel', 'tijera'];
+//      let azar = Math.floor(Math.random() * 3);
+//      let pc = options[azar]
 
-     let user = prompt('piedra, papel o tijera?');
+//      let user = prompt('piedra, papel o tijera?');
 
-     if (user === pc) {
+//      if (user === pc) {
 
-     } else if (
-          (user == 'tijera' && pc == 'papel') ||
-          (user == 'piedra' && pc == 'tijera') ||
-          (user == 'papel' && pc == 'piedra')
+//      } else if (
+//           (user == 'tijera' && pc == 'papel') ||
+//           (user == 'piedra' && pc == 'tijera') ||
+//           (user == 'papel' && pc == 'piedra')
 
-     ) {
-          console.log('ganaste')
+//      ) {
+//           console.log('ganaste')
 
-     } else {
-          console.log('perdiste')
-     }
-});
+//      } else {
+//           console.log('perdiste')
+//      }
+// });
 
 // numero azar
 
-btn2.addEventListener('click', () => {
-     alert('boton2')
+// btn2.addEventListener('click', () => {
+//      alert('boton2')
 
-     let azar = Math.floor((Math.random() * 10) + 1);
+//      let azar = Math.floor((Math.random() * 10) + 1);
 
-     let estado = true
-     let intentos = 1;
+//      let estado = true
+//      let intentos = 1;
 
 
-     while (estado) {
-          let n = Number(prompt('Digite un numero'));
+//      while (estado) {
+//           let n = Number(prompt('Digite un numero'));
 
-          if (n === azar) {
-               alert('ganaste en el intento: ${intentos}');
-               estado = false;
+//           if (n === azar) {
+//                alert(`ganaste en el intento: ${intentos}`);
+//                estado = false;
 
-          } else if (intentos >= 5) {
-               alert('perdiste, ya no tienes mas intentos');
-               estado = false
+//           } else if (intentos >= 5) {
+//                alert('perdiste, ya no tienes mas intentos');
+//                estado = false
 
-          } else {
-               alert('ese no era')
-          }
+//           } else {
+//                alert('ese no era')
+//           }
 
-          intentos++
-     }
+//           intentos++
+//      }
 
+// });
+
+
+// btn3.addEventListener('click', () => {
+//      alert('boton3')
+
+//      let tabla = Number (prompt('ingresa la tabla')); 
+//      let rango = Number(prompt('ingresa el limite '))
+
+//      if( tabla < 1 || rango < 1 ){
+//          console.log('los valores deben ser posotivos');
+//      } else if(tabla > 10) {
+//          console.log('la tabla debe ser entre 1 y 10');
+//      } else {
+//          for(let i = 1 ; i <=rango ; i++){
+//              console.log(` ${tabla} * ${i} = ${i*tabla}`)
+//          }
+//      }
+
+// });
+
+
+
+
+const ropaUrbana = [
+  { nombre: "Sudadera Oversize Negra", imagen: "https://images.unsplash.com/photo-1520975916090-3105956dac38?w=400" },
+  { nombre: "Camiseta Gráfica Street", imagen: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=400" },
+  { nombre: "Pantalón Cargo Beige", imagen: "https://images.unsplash.com/photo-1593032465171-8f4c6c0c7f43?w=400" },
+  { nombre: "Chaqueta Bomber Verde", imagen: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400" },
+  { nombre: "Gorra Snapback Roja", imagen: "https://images.unsplash.com/photo-1514996937319-344454492b37?w=400" },
+  { nombre: "Zapatillas Urbanas Blancas", imagen: "https://images.unsplash.com/photo-1528701800489-20be3c8c3c0b?w=400" },
+  { nombre: "Sudadera Tie-Dye", imagen: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400" },
+  { nombre: "Jeans Rotos Azul Claro", imagen: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400" },
+  { nombre: "Camiseta Oversize Blanca", imagen: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" },
+  { nombre: "Chaleco Utility Negro", imagen: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400" },
+  { nombre: "Pantalón Jogger Gris", imagen: "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400" },
+  { nombre: "Sudadera Graffiti", imagen: "https://images.unsplash.com/photo-1530845644680-7c3c1dc9c3d5?w=400" },
+  { nombre: "Chaqueta Denim Oversize", imagen: "https://images.unsplash.com/photo-1521336575822-6da63fb45455?w=400" },
+  { nombre: "Bucket Hat Negra", imagen: "https://images.unsplash.com/photo-1520974735194-7c4c5c2c3c3b?w=400" },
+  { nombre: "Camiseta Logo Minimalista", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400" },
+  { nombre: "Pantalón Cargo Negro", imagen: "https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=400" },
+  { nombre: "Zapatillas Chunky", imagen: "https://images.unsplash.com/photo-1519741497674-611481863552?w=400" },
+  { nombre: "Sudadera Crop", imagen: "https://images.unsplash.com/photo-1503342452485-86c7d7e2d85f?w=400" },
+  { nombre: "Chaqueta Cortavientos", imagen: "https://images.unsplash.com/photo-1544441893-675973e31985?w=400" },
+  { nombre: "Mochila Streetwear", imagen: "https://images.unsplash.com/photo-1509762774605-f07235a08f1f?w=400" }
+];
+
+// ejemplo: abrir imagen al hacer clic
+ropaUrbana.forEach(item => {
+     console.log(item.nombre, item.imagen);
 });
 
 
-btn3.addEventListener('click', () => {
-     alert('boton3')
+let title = document.querySelector('h1');
+let container = document.querySelector('section');
 
-     let tabla = Number (prompt('ingresa la tabla')); 
-     let rango = Number(prompt('ingresa el limite '))
-
-     if( tabla < 1 || rango < 1 ){
-         console.log('los valores deben ser posotivos');
-     } else if(tabla > 10) {
-         console.log('la tabla debe ser entre 1 y 10');
-     } else {
-         for(let i = 1 ; i <=rango ; i++){
-             console.log(` ${tabla} * ${i} = ${i*tabla}`)
-         }
-     }
-
-})
+title.textContent = 'ROPA'
 
 
+
+for (let i = 0; i < ropaUrbana.length; i++) {
+     let nombre = ropaUrbana[i].nombre
+     let imagen = ropaUrbana[i].imagen
+
+     container.innerHTML += `
+     
+          <div class="card">
+        <div class="img">
+            <img src="${imagen}" alt="">
+        </div>
+         <p>${nombre}</p>
+
+    </div>
+
+     `
+}
