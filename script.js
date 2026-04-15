@@ -522,56 +522,60 @@
 
 
 
+// Ejerecicios DOM
 
-const ropaUrbana = [
-  { nombre: "Sudadera Oversize Negra", imagen: "https://images.unsplash.com/photo-1520975916090-3105956dac38?w=400" },
-  { nombre: "Camiseta Gráfica Street", imagen: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=400" },
-  { nombre: "Pantalón Cargo Beige", imagen: "https://images.unsplash.com/photo-1593032465171-8f4c6c0c7f43?w=400" },
-  { nombre: "Chaqueta Bomber Verde", imagen: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400" },
-  { nombre: "Gorra Snapback Roja", imagen: "https://images.unsplash.com/photo-1514996937319-344454492b37?w=400" },
-  { nombre: "Zapatillas Urbanas Blancas", imagen: "https://images.unsplash.com/photo-1528701800489-20be3c8c3c0b?w=400" },
-  { nombre: "Sudadera Tie-Dye", imagen: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400" },
-  { nombre: "Jeans Rotos Azul Claro", imagen: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400" },
-  { nombre: "Camiseta Oversize Blanca", imagen: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" },
-  { nombre: "Chaleco Utility Negro", imagen: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400" },
-  { nombre: "Pantalón Jogger Gris", imagen: "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400" },
-  { nombre: "Sudadera Graffiti", imagen: "https://images.unsplash.com/photo-1530845644680-7c3c1dc9c3d5?w=400" },
-  { nombre: "Chaqueta Denim Oversize", imagen: "https://images.unsplash.com/photo-1521336575822-6da63fb45455?w=400" },
-  { nombre: "Bucket Hat Negra", imagen: "https://images.unsplash.com/photo-1520974735194-7c4c5c2c3c3b?w=400" },
-  { nombre: "Camiseta Logo Minimalista", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400" },
-  { nombre: "Pantalón Cargo Negro", imagen: "https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=400" },
-  { nombre: "Zapatillas Chunky", imagen: "https://images.unsplash.com/photo-1519741497674-611481863552?w=400" },
-  { nombre: "Sudadera Crop", imagen: "https://images.unsplash.com/photo-1503342452485-86c7d7e2d85f?w=400" },
-  { nombre: "Chaqueta Cortavientos", imagen: "https://images.unsplash.com/photo-1544441893-675973e31985?w=400" },
-  { nombre: "Mochila Streetwear", imagen: "https://images.unsplash.com/photo-1509762774605-f07235a08f1f?w=400" }
-];
+// const ropaUrbana = [
+//   { nombre: "Sudadera Oversize Negra", imagen: "https://images.unsplash.com/photo-1520975916090-3105956dac38?w=400" },
+//   { nombre: "Camiseta Gráfica Street", imagen: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=400" },
+//   { nombre: "Pantalón Cargo Beige", imagen: "https://images.unsplash.com/photo-1593032465171-8f4c6c0c7f43?w=400" },
+//   { nombre: "Chaqueta Bomber Verde", imagen: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400" },
+//   { nombre: "Gorra Snapback Roja", imagen: "https://images.unsplash.com/photo-1514996937319-344454492b37?w=400" },
+//   { nombre: "Zapatillas Urbanas Blancas", imagen: "https://images.unsplash.com/photo-1528701800489-20be3c8c3c0b?w=400" },
+//   { nombre: "Sudadera Tie-Dye", imagen: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400" },
+//   { nombre: "Jeans Rotos Azul Claro", imagen: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400" },
+//   { nombre: "Camiseta Oversize Blanca", imagen: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" },
+//   { nombre: "Chaleco Utility Negro", imagen: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400" },
+//   { nombre: "Pantalón Jogger Gris", imagen: "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400" },
+//   { nombre: "Sudadera Graffiti", imagen: "https://images.unsplash.com/photo-1530845644680-7c3c1dc9c3d5?w=400" },
+//   { nombre: "Chaqueta Denim Oversize", imagen: "https://images.unsplash.com/photo-1521336575822-6da63fb45455?w=400" },
+//   { nombre: "Bucket Hat Negra", imagen: "https://images.unsplash.com/photo-1520974735194-7c4c5c2c3c3b?w=400" },
+//   { nombre: "Camiseta Logo Minimalista", imagen: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400" },
+//   { nombre: "Pantalón Cargo Negro", imagen: "https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=400" },
+//   { nombre: "Zapatillas Chunky", imagen: "https://images.unsplash.com/photo-1519741497674-611481863552?w=400" },
+//   { nombre: "Sudadera Crop", imagen: "https://images.unsplash.com/photo-1503342452485-86c7d7e2d85f?w=400" },
+//   { nombre: "Chaqueta Cortavientos", imagen: "https://images.unsplash.com/photo-1544441893-675973e31985?w=400" },
+//   { nombre: "Mochila Streetwear", imagen: "https://images.unsplash.com/photo-1509762774605-f07235a08f1f?w=400" }
+// ];
 
-// ejemplo: abrir imagen al hacer clic
-ropaUrbana.forEach(item => {
-     console.log(item.nombre, item.imagen);
-});
-
-
-let title = document.querySelector('h1');
-let container = document.querySelector('section');
-
-title.textContent = 'ROPA'
+// // ejemplo: abrir imagen al hacer clic
+// ropaUrbana.forEach(item => {
+//      console.log(item.nombre, item.imagen);
+// });
 
 
+// let title = document.querySelector('h1');
+// let container = document.querySelector('section');
 
-for (let i = 0; i < ropaUrbana.length; i++) {
-     let nombre = ropaUrbana[i].nombre
-     let imagen = ropaUrbana[i].imagen
+// title.textContent = 'ROPA'
 
-     container.innerHTML += `
+
+
+// for (let i = 0; i < ropaUrbana.length; i++) {
+//      let nombre = ropaUrbana[i].nombre
+//      let imagen = ropaUrbana[i].imagen
+
+//      container.innerHTML += `
      
-          <div class="card">
-        <div class="img">
-            <img src="${imagen}" alt="">
-        </div>
-         <p>${nombre}</p>
+//           <div class="card">
+//         <div class="img">
+//             <img src="${imagen}" alt="">
+//         </div>
+//          <p>${nombre}</p>
 
-    </div>
+//     </div>
 
-     `
-}
+//      `
+// };
+
+
+
